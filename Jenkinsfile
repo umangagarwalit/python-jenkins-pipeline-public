@@ -11,13 +11,13 @@ pipeline {
 
         stage('Install Python & Dependencies') {
             steps {
-                sh 'python -V'
+                bat 'python -V'
             }
         }
 
         stage('Run Python Script') {
             steps {
-                sh 'python3 python_code.py'
+                bat 'python python_code.py'
             }
         }
     }
