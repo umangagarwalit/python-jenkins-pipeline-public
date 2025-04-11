@@ -5,7 +5,7 @@ pipeline {
 	
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/umangagarwalit/python-jenkins-pipeline-public.git'
+                git url: 'https://github.com/umangagarwalit/python-jenkins-pipeline-public.git', branch: 'main'
             }
         }
 
